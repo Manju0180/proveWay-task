@@ -1,0 +1,385 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+
+html, body {
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    height: 100%;
+    overflow-x: hidden; /* Prevent horizontal scrollbar */
+    font-family: 'Inter';
+}
+
+
+
+.container-heading {
+    display: flex;
+    width: 100%;
+    /* max-width: 343px; */
+    margin: 5vh 0 auto;
+    /* margin-left: 20px;
+    margin-right: 20px; */
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5vh;
+    position: relative;
+    box-sizing: border-box;
+}
+
+.line, .line-two{
+    /* width: 91.65px; */
+    flex: 1;
+    height: 0px;
+    border-top: 0.9px solid #C8C8C8;
+    opacity: 1;
+    position: relative;
+}
+
+.promo-text {
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 24.2px;
+    color: #FF6B82;
+    padding: 2px 5px;
+    text-align: center;
+    white-space: nowrap;
+}
+
+/* .outer-container {
+    width: 90%; 
+    margin: 5vh auto; 
+} */
+.container-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Gap between the boxes */
+    margin: 2vh 0 auto;
+    /* margin-left: auto;
+    margin-right: auto; */
+    width: 100%; /* Ensure the container takes up most of the page but not full width */
+    /* max-width: 600px;  */
+    padding: 0 5vh;
+    position: relative;
+    box-sizing: border-box;
+}
+
+/* Box styling */
+.box {
+    width: 100%;
+    height: auto; /* Initial height */
+    /* background-color: #F0F0F0; */
+    border: 1px solid #C8C8C8;
+    display: flex;
+    /* flex-direction: column; */
+    /* justify-content: center;
+    align-items: center; */
+    cursor: pointer;
+    transition: max-height 0.3s ease, padding 0.3s ease; /* Smooth transition for expanding */
+    /* text-align: center; */
+    font-size: 16px;
+    font-weight: bold;
+    overflow: hidden;
+}
+
+/* Expand class when box is clicked */
+.box.expanded {
+    /* height: 300px;  */
+    flex-direction: column;
+    background-color: #ffF9fa;
+}
+
+.box.expand-small {
+    max-height: 170px;
+}
+
+.expand-medium {
+    max-height: 210px;
+}
+
+.expand-large {
+    max-height: 300px;
+}
+
+
+.unit-elements{
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    margin: 1rem;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    
+}
+
+.radio-button{
+    font-family: 'Inter';
+    display: flex;
+    flex-direction: row;
+    gap:0.5rem;
+}
+.radio-button label{
+    font-family: inter;
+    font-size: 14px;
+}
+.u-name {
+    flex: 1; /* Make sure the name takes available space */
+    text-align: left;
+    flex-direction: column;
+}
+
+
+.discount-box {
+    background-color: #FF6B82; /* Red color for the discount box */
+    color: white;
+    padding: 2px;
+    /* margin-top: 5px; 
+    font-size: 14px;*/
+    font-weight: 400; 
+    text-align: center;
+}
+
+.sub-label {
+    font-family: 'Inter';
+    font-size: 12px;
+    font-weight: 400;
+    color: #000000; /* Gray color for the sub-label */
+    /* margin-top: 5px; */
+    align-items: center;
+    margin-left: 1.8rem;
+}
+
+.price-box{
+    display: flex;
+    flex-direction: column;
+}
+.price {
+    text-align: right;
+}
+
+.sub-price{
+    font-size: 10px;
+    text-decoration:line-through;
+    font-weight: 400;
+    color: #8C8C8C;
+}
+
+.additional-content {
+    display: none;
+    margin-top: 15px;
+
+}
+
+.box.expanded .additional-content {
+    display: flex;
+    flex-direction: row;
+    margin: 1rem;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.select-container {
+    display: flex;
+    gap: 20px;
+    
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 0.5rem 5rem 5rem; 
+    /* grid-template-columns: minmax(1rem, 0.3fr) minmax(2rem, 3fr) minmax(2rem, 3fr); */
+    grid-template-rows: auto auto auto;
+    gap: 0.5rem;
+    /* padding: 10px; */
+    width: 100%; 
+    height: 100%;
+    margin-left: 2rem;
+    box-sizing: border-box;
+    justify-items: start;
+  }
+
+  .grid-container > div {
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    /* padding: 20px 0; */
+    margin:0;
+    font-size: 10px;
+    gap: 0.2rem;
+  }
+  .grid-container select {
+    width: 100%;           
+    width: 4rem;       
+    padding: 0.25rem;      
+    font-size: 10px;
+    align-self: start;
+}
+
+
+
+
+.checkout {
+    
+    display: flex;
+    justify-content: space-between; /* Aligns delivery and total at the start and end */
+    align-items: center;
+    padding: 0 2rem; /* Optional: Add some padding for spacing */
+    margin: 3vh auto;
+    font-size: 14px;
+}
+
+.delivery {
+    flex: 1; /* Keeps delivery width according to content */
+    /* margin-right: 10px; Optional: Adds some space between delivery and total */
+}
+
+.total {
+    flex-grow: 1; /* Makes total take up the remaining space */
+    text-align: right; /* Aligns the text to the right */
+}
+
+.add-cart{
+    display: flex;
+    justify-content: center;
+    background-color: #FF6B82;  
+    width: 88%;  
+    padding: 3vh 2vw;
+    margin: 5vh 12.5vw;  
+    text-align: center; 
+    align-items: center;
+    margin: 4vh auto;  
+}
+
+/* .plus {
+    width: 1rem;
+    height: 20px;
+    color: white;
+    border-radius: 50%;
+    margin-right: 8px;
+    font-weight: 2px;
+} */
+
+.plus-icon {
+    width: 24px; /* Customize width */
+    height: 24px; /* Customize height */
+    fill: white; /* Color of the plus icon */
+    margin-right: 10px; /* Space between icon and text */
+}
+
+/* .add-cart {
+    width: 71.5%;
+    padding: 3vh 2vw;
+    margin: 5vh 12.5vw;
+} */
+
+
+
+
+
+
+
+
+/* desktop view */
+
+@media (min-width: 768px) {
+    .container-content {
+        width: 80%;         
+        /* max-width: 800px;    */
+        margin: 5vh auto;  
+        padding: 0 2rem;    
+    }
+
+    /* Adjust grid for desktop view */
+    .grid-container {
+        grid-template-columns: 1rem 6rem 6rem; 
+        gap: 1rem;                           
+        margin-left: 2rem;                      
+        padding: 0.5rem;                     
+    }
+
+    .grid-container select {
+        width: 6rem;                     
+        padding: 0.4rem;                     
+    }
+
+    .container-heading {
+        padding: 0 2rem;                     
+        margin: 5vh auto;                    
+        max-width: 800px;                   
+    }
+
+    /* .checkout{
+        width: 80%;         
+        
+        display: flex;
+        justify-content: space-between; 
+        align-items: center;
+        padding: 0 3rem; 
+        margin: 0 7rem;  
+    } */
+
+     .checkout {
+        width: 80%;
+        display: flex;
+        justify-content: space-between; 
+        align-items: center;
+        padding: 0 2rem; 
+        margin: 5vh auto;
+    }
+
+    /* .delivery {
+        flex: 1; 
+        
+        
+    }
+    
+    .total {
+        flex-grow: 1; 
+        text-align: right; 
+    }
+    
+    .add-cart{
+        background-color: #FF6B82;  
+        width: 100%;  
+        padding: 20px;  
+        text-align: center; 
+        margin: 0 5rem;  
+    } */ 
+
+    /* Checkout container */
+/* .checkout {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    width: 100%; 
+    padding: 0 5vh; 
+    box-sizing: border-box;
+    margin: 2vh 0; 
+} */
+
+.delivery, .total {
+    font-family: 'Inter';
+    font-size: 14px;
+    color: #000; 
+}
+
+.delivery {
+    text-align: left; 
+    padding-left: 2rem;
+}
+
+.total {
+    text-align: right; 
+    font-weight: 600;
+    padding-right: 2rem;
+}
+
+.add-cart {
+    width: 71.5%;
+    padding: 3vh 2vw;
+    margin: 5vh 12.5vw;
+}
+
+}
