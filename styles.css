@@ -1,23 +1,18 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
 
-html, body {
-    margin: 0; /* Remove default margin */
-    padding: 0; /* Remove default padding */
+html,
+body {
+    margin: 0;
+    padding: 0;
     height: 100%;
-    overflow-x: hidden; /* Prevent horizontal scrollbar */
+    overflow-x: hidden;
     font-family: 'Inter';
 }
-
-
 
 .container-heading {
     display: flex;
     width: 100%;
-    /* max-width: 343px; */
     margin: 5vh 0 auto;
-    /* margin-left: 20px;
-    margin-right: 20px; */
     align-items: center;
     justify-content: space-between;
     padding: 0 5vh;
@@ -25,8 +20,8 @@ html, body {
     box-sizing: border-box;
 }
 
-.line, .line-two{
-    /* width: 91.65px; */
+.line,
+.line-two {
     flex: 1;
     height: 0px;
     border-top: 0.9px solid #C8C8C8;
@@ -45,19 +40,12 @@ html, body {
     white-space: nowrap;
 }
 
-/* .outer-container {
-    width: 90%; 
-    margin: 5vh auto; 
-} */
 .container-content {
     display: flex;
     flex-direction: column;
-    gap: 20px; /* Gap between the boxes */
+    gap: 20px;
     margin: 2vh 0 auto;
-    /* margin-left: auto;
-    margin-right: auto; */
-    width: 100%; /* Ensure the container takes up most of the page but not full width */
-    /* max-width: 600px;  */
+    width: 100%;
     padding: 0 5vh;
     position: relative;
     box-sizing: border-box;
@@ -66,24 +54,17 @@ html, body {
 /* Box styling */
 .box {
     width: 100%;
-    height: auto; /* Initial height */
-    /* background-color: #F0F0F0; */
+    height: auto;
     border: 1px solid #C8C8C8;
     display: flex;
-    /* flex-direction: column; */
-    /* justify-content: center;
-    align-items: center; */
     cursor: pointer;
-    transition: max-height 0.3s ease, padding 0.3s ease; /* Smooth transition for expanding */
-    /* text-align: center; */
+    transition: max-height 0.3s ease, padding 0.3s ease;
     font-size: 16px;
     font-weight: bold;
     overflow: hidden;
 }
 
-/* Expand class when box is clicked */
 .box.expanded {
-    /* height: 300px;  */
     flex-direction: column;
     background-color: #ffF9fa;
 }
@@ -101,7 +82,7 @@ html, body {
 }
 
 
-.unit-elements{
+.unit-elements {
     display: flex;
     flex-direction: row;
     width: 90%;
@@ -109,33 +90,33 @@ html, body {
     justify-content: space-around;
     align-items: center;
     position: relative;
-    
+
 }
 
-.radio-button{
+.radio-button {
     font-family: 'Inter';
     display: flex;
     flex-direction: row;
-    gap:0.5rem;
+    gap: 0.5rem;
 }
-.radio-button label{
+
+.radio-button label {
     font-family: inter;
     font-size: 14px;
 }
+
 .u-name {
-    flex: 1; /* Make sure the name takes available space */
+    flex: 1;
     text-align: left;
     flex-direction: column;
 }
 
 
 .discount-box {
-    background-color: #FF6B82; /* Red color for the discount box */
+    background-color: #FF6B82;
     color: white;
     padding: 2px;
-    /* margin-top: 5px; 
-    font-size: 14px;*/
-    font-weight: 400; 
+    font-weight: 400;
     text-align: center;
 }
 
@@ -143,23 +124,23 @@ html, body {
     font-family: 'Inter';
     font-size: 12px;
     font-weight: 400;
-    color: #000000; /* Gray color for the sub-label */
-    /* margin-top: 5px; */
+    color: #000000;
     align-items: center;
     margin-left: 1.8rem;
 }
 
-.price-box{
+.price-box {
     display: flex;
     flex-direction: column;
 }
+
 .price {
     text-align: right;
 }
 
-.sub-price{
+.sub-price {
     font-size: 10px;
-    text-decoration:line-through;
+    text-decoration: line-through;
     font-weight: 400;
     color: #8C8C8C;
 }
@@ -175,6 +156,7 @@ html, body {
     flex-direction: row;
     margin: 1rem;
 }
+
 .container {
     display: flex;
     flex-direction: column;
@@ -184,35 +166,33 @@ html, body {
 .select-container {
     display: flex;
     gap: 20px;
-    
+
 }
 
 .grid-container {
     display: grid;
-    grid-template-columns: 0.5rem 5rem 5rem; 
-    /* grid-template-columns: minmax(1rem, 0.3fr) minmax(2rem, 3fr) minmax(2rem, 3fr); */
+    grid-template-columns: 0.5rem 5rem 5rem;
     grid-template-rows: auto auto auto;
     gap: 0.5rem;
-    /* padding: 10px; */
-    width: 100%; 
+    width: 100%;
     height: 100%;
     margin-left: 2rem;
     box-sizing: border-box;
     justify-items: start;
-  }
+}
 
-  .grid-container > div {
+.grid-container>div {
     background-color: rgba(255, 255, 255, 0.8);
     text-align: center;
-    /* padding: 20px 0; */
-    margin:0;
+    margin: 0;
     font-size: 10px;
     gap: 0.2rem;
-  }
-  .grid-container select {
-    width: 100%;           
-    width: 4rem;       
-    padding: 0.25rem;      
+}
+
+.grid-container select {
+    width: 100%;
+    width: 4rem;
+    padding: 0.25rem;
     font-size: 10px;
     align-self: start;
 }
@@ -221,63 +201,87 @@ html, body {
 
 
 .checkout {
-    
+
     display: flex;
-    justify-content: space-between; /* Aligns delivery and total at the start and end */
+    justify-content: space-between;
     align-items: center;
-    padding: 0 2rem; /* Optional: Add some padding for spacing */
-    margin: 3vh auto;
+    padding: 0 3rem;
+    margin: 2vh auto;
     font-size: 14px;
 }
 
 .delivery {
-    flex: 1; /* Keeps delivery width according to content */
-    /* margin-right: 10px; Optional: Adds some space between delivery and total */
+    flex: 1;
+
 }
 
 .total {
-    flex-grow: 1; /* Makes total take up the remaining space */
-    text-align: right; /* Aligns the text to the right */
+    flex-grow: 1;
+    text-align: right;
 }
 
-.add-cart{
+.add-cart {
     display: flex;
     justify-content: center;
-    background-color: #FF6B82;  
-    width: 88%;  
-    padding: 3vh 2vw;
-    margin: 5vh 12.5vw;  
-    text-align: center; 
-    align-items: center;
-    margin: 4vh auto;  
-}
-
-/* .plus {
-    width: 1rem;
-    height: 20px;
-    color: white;
-    border-radius: 50%;
-    margin-right: 8px;
-    font-weight: 2px;
-} */
-
-.plus-icon {
-    width: 24px; /* Customize width */
-    height: 24px; /* Customize height */
-    fill: white; /* Color of the plus icon */
-    margin-right: 10px; /* Space between icon and text */
-}
-
-/* .add-cart {
-    width: 71.5%;
+    background-color: #FF6B82;
+    width: 77%;
     padding: 3vh 2vw;
     margin: 5vh 12.5vw;
-} */
+    text-align: center;
+    align-items: center;
+    margin: 2vh auto;
+    color: white;
+}
 
 
+.plus-icon {
+    width: 24px;
+    height: 24px;
+    fill: white;
+    margin-right: 10px;
+}
+
+input[type="radio"] {
+    appearance: none;
+    border: 1.5px solid #DADADA;
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    position: relative;
+    cursor: pointer;
+}
+
+input[type="radio"]::before {
+    content: "";
+    width: 10px;
+    height: 10px;
+    background-color: transparent;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: background-color 0.2s ease;
+}
+
+input[type="radio"]:checked {
+    border-color: #FF6B82;
+}
 
 
+input[type="radio"]:checked::before {
+    background-color: #FF6B82;
+    border: 2px solid white;
+}
 
+
+.footer {
+    width: 80%;
+    margin-left: 74vw;
+    margin-top: 1rem;
+    font-size: 16px;
+    color: #00000066;
+}
 
 
 
@@ -285,101 +289,78 @@ html, body {
 
 @media (min-width: 768px) {
     .container-content {
-        width: 80%;         
-        /* max-width: 800px;    */
-        margin: 5vh auto;  
-        padding: 0 2rem;    
+        width: 80%;
+        margin: 5vh auto;
+        padding: 0 2rem;
     }
 
-    /* Adjust grid for desktop view */
     .grid-container {
-        grid-template-columns: 1rem 6rem 6rem; 
-        gap: 1rem;                           
-        margin-left: 2rem;                      
-        padding: 0.5rem;                     
+        grid-template-columns: 1rem 6rem 6rem;
+        gap: 1rem;
+        margin-left: 2rem;
+        padding: 0.5rem;
     }
 
     .grid-container select {
-        width: 6rem;                     
-        padding: 0.4rem;                     
+        width: 6rem;
+        padding: 0.4rem;
     }
 
     .container-heading {
-        padding: 0 2rem;                     
-        margin: 5vh auto;                    
-        max-width: 800px;                   
+        padding: 0 2rem;
+        margin: 5vh auto;
+        max-width: 80%;
     }
 
-    /* .checkout{
-        width: 80%;         
-        
-        display: flex;
-        justify-content: space-between; 
-        align-items: center;
-        padding: 0 3rem; 
-        margin: 0 7rem;  
-    } */
 
-     .checkout {
+    .checkout {
         width: 80%;
         display: flex;
-        justify-content: space-between; 
+        justify-content: space-between;
         align-items: center;
-        padding: 0 2rem; 
+        padding: 0 2rem;
         margin: 5vh auto;
     }
 
-    /* .delivery {
-        flex: 1; 
-        
-        
-    }
-    
+
+    .delivery,
     .total {
-        flex-grow: 1; 
-        text-align: right; 
+        font-family: 'Inter';
+        font-size: 14px;
+        color: #000;
     }
-    
-    .add-cart{
-        background-color: #FF6B82;  
-        width: 100%;  
-        padding: 20px;  
-        text-align: center; 
-        margin: 0 5rem;  
-    } */ 
 
-    /* Checkout container */
-/* .checkout {
-    display: flex;
-    justify-content: space-between; 
-    align-items: center;
-    width: 100%; 
-    padding: 0 5vh; 
-    box-sizing: border-box;
-    margin: 2vh 0; 
-} */
+    .delivery {
+        text-align: left;
+        padding-left: 2rem;
+        font-weight: 600;
+        color: #FF6B82;
+    }
 
-.delivery, .total {
-    font-family: 'Inter';
-    font-size: 14px;
-    color: #000; 
+    .total {
+        text-align: right;
+        font-weight: 600;
+        padding-right: 2rem;
+    }
+
+    .add-cart {
+        width: 71.4%;
+        padding: 3vh 2vw;
+        margin: 5vh 12.2vw;
+        margin-bottom: 0;
+    }
+
+
+
 }
 
-.delivery {
-    text-align: left; 
-    padding-left: 2rem;
-}
+@media(max-width: 768px) {
 
-.total {
-    text-align: right; 
-    font-weight: 600;
-    padding-right: 2rem;
-}
-
-.add-cart {
-    width: 71.5%;
-    padding: 3vh 2vw;
-    margin: 5vh 12.5vw;
-}
-
+    .footer {
+        width: 100%;
+        margin-left: 51vw;
+        margin-top: 1rem;
+        font-size: 16px;
+        color: #00000066;
+    }
 }

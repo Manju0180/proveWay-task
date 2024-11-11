@@ -16,7 +16,7 @@
     </div>
     <div class="outer-container">
         <div class="container-content">
-            <div class="box" onclick="toggleExpand(this,'small')">
+            <div class="box" onclick="toggleExpand(event,this,'small')">
                 <div class="unit-elements">
                     <div class="u-name">
                         <div class="radio-button">
@@ -27,16 +27,16 @@
                         <div class="sub-label">Standard Price</div>
                     </div>
                     <div class="price-box">
-                    <div class="price">$10.00 USD</div>
-                    <div class="sub-price">$24.00 USD</div>
-                </div>
+                        <div class="price">$10.00 USD</div>
+                        <div class="sub-price">$24.00 USD</div>
+                    </div>
                 </div>
                 <div class="additional-content">
                     <div class="grid-container">
                         <div class="item1"></div> <!-- Empty cell -->
                         <div class="item2">Size</div>
-                        <div class="item3">Color</div>  
-                        
+                        <div class="item3">Color</div>
+
                         <div class="item4">#1</div>
                         <div class="item4">
                             <select>
@@ -47,7 +47,7 @@
                                 <option value="2">XXL</option>
                             </select>
                         </div>
-                        
+
                         <div class="item5">
                             <select>
                                 <option value="">Black</option>
@@ -57,10 +57,10 @@
                                 <option value="2">Blue</option>
                             </select>
                         </div>
-                      </div>
+                    </div>
                 </div>
             </div>
-            <div class="box" onclick="toggleExpand(this,'medium')">
+            <div class="box" onclick="toggleExpand(event,this,'medium')">
                 <div class="unit-elements">
                     <div class="u-name">
                         <div class="radio-button">
@@ -71,16 +71,16 @@
                         <div class="sub-label">Standard Price</div>
                     </div>
                     <div class="price-box">
-                    <div class="price">$18.00 USD</div>
-                    <div class="sub-price">$24.00 USD</div>
-                </div>
+                        <div class="price">$18.00 USD</div>
+                        <div class="sub-price">$24.00 USD</div>
+                    </div>
                 </div>
                 <div class="additional-content">
                     <div class="grid-container">
                         <div class="item1"></div> <!-- Empty cell -->
                         <div class="item2">Size</div>
-                        <div class="item3">Color</div>  
-                        
+                        <div class="item3">Color</div>
+
                         <div class="item4">#1</div>
                         <div class="item4">
                             <select>
@@ -91,7 +91,7 @@
                                 <option value="2">XXL</option>
                             </select>
                         </div>
-                        
+
                         <div class="item5">
                             <select>
                                 <option value="">Black</option>
@@ -101,7 +101,7 @@
                                 <option value="2">Blue</option>
                             </select>
                         </div>
-                        
+
                         <div class="item7">#2</div>
                         <div class="item8">
                             <select>
@@ -110,9 +110,9 @@
                                 <option value="2">L</option>
                                 <option value="2">XL</option>
                                 <option value="2">XXL</option>
-                                </select>
+                            </select>
                         </div>
-                        
+
                         <div class="item9">
                             <select>
                                 <option value="">Black</option>
@@ -122,10 +122,10 @@
                                 <option value="2">Blue</option>
                             </select>
                         </div>
-                      </div>
+                    </div>
                 </div>
             </div>
-            <div class="box" onclick="toggleExpand(this,'large')">
+            <div class="box" onclick="toggleExpand(event,this,'large')">
                 <div class="unit-elements">
                     <div class="u-name">
                         <div class="radio-button">
@@ -136,16 +136,16 @@
                         <div class="sub-label">Standard Price</div>
                     </div>
                     <div class="price-box">
-                    <div class="price">$24.00 USD</div>
-                    <div class="sub-price">$24.00 USD</div>
-                </div>
+                        <div class="price">$24.00 USD</div>
+                        <div class="sub-price">$24.00 USD</div>
+                    </div>
                 </div>
                 <div class="additional-content">
                     <div class="grid-container">
                         <div class="item1"></div> <!-- Empty cell -->
                         <div class="item2">Size</div>
-                        <div class="item3">Color</div>  
-                        
+                        <div class="item3">Color</div>
+
                         <div class="item4">#1</div>
                         <div class="item4">
                             <select>
@@ -156,7 +156,7 @@
                                 <option value="2">XXL</option>
                             </select>
                         </div>
-                        
+
                         <div class="item5">
                             <select>
                                 <option value="">Black</option>
@@ -166,7 +166,7 @@
                                 <option value="2">Blue</option>
                             </select>
                         </div>
-                        
+
                         <div class="item7">#2</div>
                         <div class="item8">
                             <select>
@@ -177,7 +177,7 @@
                                 <option value="2">XXL</option>
                             </select>
                         </div>
-                        
+
                         <div class="item9">
                             <select>
                                 <option value="">Black</option>
@@ -197,7 +197,7 @@
                                 <option value="2">XXL</option>
                             </select>
                         </div>
-                        
+
                         <div class="item9">
                             <select>
                                 <option value="">Black</option>
@@ -207,7 +207,7 @@
                                 <option value="2">Blue</option>
                             </select>
                         </div>
-                      </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -223,6 +223,7 @@
             </svg>
             <div class="cart-text">Add To Cart</div>
         </div>
+        <div class="footer">@ Powered by Pumper</div>
     </div>
     <script src="index.js"></script>
 </body>
